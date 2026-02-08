@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Shashank Arava - Software Developer Portfolio">
     <meta name="author" content="Shashank Arava">
-    <title>Shashank Arava | Aspiring Software Developer</title>
-    
+    <title>Shashank Arava</title>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Background Effects -->
     <div class="bg-effect">
@@ -30,8 +34,8 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-content">
-                <div class="logo">SA</div>
-                
+                <div class="logo">Shashank Arava</div>
+
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
@@ -52,33 +56,37 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
+                <h2 class="fade-in-up">Hi, I'm </h2>
                 <h1 class="fade-in-up">
-                    Hi, I'm <span class="gradient-text">Shashank Arava</span>
+                    <span class="fade-in-up gradient-text">Shashank</span>
                 </h1>
-                <p class="subtitle fade-in-up">Building elegant solutions to complex problems</p>
+                <p class="subtitle fade-in-up">Welcome to my porfolio!</p>
                 <p class="bio fade-in-up">
-                    I'm a passionate software developer with a keen eye for design and a love for creating 
-                    seamless user experiences. I specialize in building modern web applications using 
-                    cutting-edge technologies.
+                    I'm an aspiring software engineer building solutions to real-world
+                    challenges and software that reflects my personal interests.
                 </p>
-                
+
                 <div class="hero-buttons fade-in-up">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+                    <!-- <a href="resume.pdf" class="btn btn-secondary" download>Download Resume</a> -->
+                     <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                 </div>
 
                 <div class="social-links fade-in-up">
-                    <a href="https://github.com/shashankarava" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <a class="tooltip" href="https://github.com/ssarava" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
                         <i class="fab fa-github"></i>
+                        <span class="tooltiptext">Check out my GitHub!</span>
                     </a>
-                    <a href="https://linkedin.com/in/shashankarava" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+
+                    <a class="tooltip" href="https://linkedin.com/in/shashank-arava" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
+                        <span class="tooltiptext">Add me on LinkedIn!</span>
                     </a>
-                    <a href="https://twitter.com/shashankarava" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="mailto:contact@shashankarava.io" aria-label="Email">
+                    <a class="tooltip" href="#contact" aria-label="Email">
                         <i class="fas fa-envelope"></i>
+                        <span class="tooltiptext">Contact me!</span>
                     </a>
                 </div>
             </div>
@@ -97,21 +105,30 @@
                 <div class="about-text">
                     <h3>Who I Am</h3>
                     <p>
-                        I'm a passionate full-stack developer with 5+ years of experience creating innovative 
-                        web solutions. I thrive on turning complex problems into elegant, user-friendly applications.
+                        I study Computer Science and Mathematics @ UMD.
                     </p>
                     <p>
-                        My journey in software development has been driven by curiosity and a commitment to 
-                        continuous learning. I stay current with emerging technologies while maintaining a 
-                        strong foundation in software engineering principles.
+
+                        I love computer science because I can express my creativity when working on exciting projects,
+                        especially those that lie at the intersection of mathematics and health sciences. If I'm not
+                        learning
+                        something new every day, then I'm honing my knowledge and skillset on something I already know
+                        and
+                        working towards implementing it with my own twist.
                     </p>
                     <p>
-                        When I'm not coding, you'll find me exploring new tech trends, contributing to 
-                        open-source projects, or sharing knowledge with the developer community.
+                        My journey in software development has been driven by curiosity and a commitment to continuous
+                        learning. I stay current with emerging technologies while maintaining a strong foundation in
+                        software
+                        engineering principles.
+                    </p>
+                    <p>
+                        In my free time, I enjoy travelling, lifting, and checking out new music.<br />
+                        Oh, and I'm a game dev hobbyist.
                     </p>
                 </div>
-
-                <div class="stats-grid">
+                <img src="images/shashank_banff.jpeg" />
+                <!-- <div class="stats-grid">
                     <div class="stat-item">
                         <span class="stat-number">5+</span>
                         <span class="stat-label">Years Experience</span>
@@ -128,7 +145,7 @@
                         <span class="stat-number">1M+</span>
                         <span class="stat-label">Users Impacted</span>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -192,16 +209,15 @@
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80" 
-                         alt="E-Commerce Platform" 
-                         class="project-image">
+                    <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80"
+                        alt="E-Commerce Platform" class="project-image">
                     <div class="project-content">
                         <h3>E-Commerce Platform</h3>
                         <p>
-                            A full-stack e-commerce platform with real-time inventory management, payment 
+                            A full-stack e-commerce platform with real-time inventory management, payment
                             processing, and order tracking. Built with microservices architecture for scalability.
                         </p>
-                        
+
                         <div class="project-tech">
                             <span class="tech-tag">React</span>
                             <span class="tech-tag">Node.js</span>
@@ -217,16 +233,12 @@
                         </ul>
 
                         <div class="project-links">
-                            <a href="https://github.com/shashankarava/ecommerce-platform" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               class="project-link">
+                            <a href="https://github.com/shashankarava/ecommerce-platform" target="_blank"
+                                rel="noopener noreferrer" class="project-link">
                                 <i class="fab fa-github"></i> Code
                             </a>
-                            <a href="https://demo.shashankarava.io/ecommerce" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               class="project-link">
+                            <a href="https://demo.shashankarava.io/ecommerce" target="_blank" rel="noopener noreferrer"
+                                class="project-link">
                                 <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
                         </div>
@@ -235,16 +247,15 @@
 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80" 
-                         alt="AI Content Generator" 
-                         class="project-image">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80"
+                        alt="AI Content Generator" class="project-image">
                     <div class="project-content">
                         <h3>AI Content Generator</h3>
                         <p>
-                            An AI-powered content generation tool that helps marketers create engaging copy. 
+                            An AI-powered content generation tool that helps marketers create engaging copy.
                             Leverages GPT-4 for generating high-quality marketing content at scale.
                         </p>
-                        
+
                         <div class="project-tech">
                             <span class="tech-tag">Next.js</span>
                             <span class="tech-tag">OpenAI API</span>
@@ -259,16 +270,12 @@
                         </ul>
 
                         <div class="project-links">
-                            <a href="https://github.com/shashankarava/ai-content-gen" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               class="project-link">
+                            <a href="https://github.com/shashankarava/ai-content-gen" target="_blank"
+                                rel="noopener noreferrer" class="project-link">
                                 <i class="fab fa-github"></i> Code
                             </a>
-                            <a href="https://demo.shashankarava.io/ai-content" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               class="project-link">
+                            <a href="https://demo.shashankarava.io/ai-content" target="_blank" rel="noopener noreferrer"
+                                class="project-link">
                                 <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
                         </div>
@@ -277,16 +284,15 @@
 
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" 
-                         alt="Task Management Dashboard" 
-                         class="project-image">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+                        alt="Task Management Dashboard" class="project-image">
                     <div class="project-content">
                         <h3>Task Management Dashboard</h3>
                         <p>
-                            A collaborative project management tool with real-time updates, team analytics, 
+                            A collaborative project management tool with real-time updates, team analytics,
                             and customizable workflows. Perfect for agile teams.
                         </p>
-                        
+
                         <div class="project-tech">
                             <span class="tech-tag">React</span>
                             <span class="tech-tag">Firebase</span>
@@ -301,16 +307,12 @@
                         </ul>
 
                         <div class="project-links">
-                            <a href="https://github.com/shashankarava/task-dashboard" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               class="project-link">
+                            <a href="https://github.com/shashankarava/task-dashboard" target="_blank"
+                                rel="noopener noreferrer" class="project-link">
                                 <i class="fab fa-github"></i> Code
                             </a>
-                            <a href="https://demo.shashankarava.io/tasks" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               class="project-link">
+                            <a href="https://demo.shashankarava.io/tasks" target="_blank" rel="noopener noreferrer"
+                                class="project-link">
                                 <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
                         </div>
@@ -319,16 +321,15 @@
 
                 <!-- Project 4 -->
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80" 
-                         alt="Weather Forecast App" 
-                         class="project-image">
+                    <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80"
+                        alt="Weather Forecast App" class="project-image">
                     <div class="project-content">
                         <h3>Weather Forecast App</h3>
                         <p>
-                            A beautiful weather application with 7-day forecasts, interactive maps, and 
+                            A beautiful weather application with 7-day forecasts, interactive maps, and
                             severe weather alerts. Features a clean, intuitive interface.
                         </p>
-                        
+
                         <div class="project-tech">
                             <span class="tech-tag">React Native</span>
                             <span class="tech-tag">OpenWeather API</span>
@@ -343,16 +344,12 @@
                         </ul>
 
                         <div class="project-links">
-                            <a href="https://github.com/shashankarava/weather-app" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               class="project-link">
+                            <a href="https://github.com/shashankarava/weather-app" target="_blank"
+                                rel="noopener noreferrer" class="project-link">
                                 <i class="fab fa-github"></i> Code
                             </a>
-                            <a href="https://demo.shashankarava.io/weather" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               class="project-link">
+                            <a href="https://demo.shashankarava.io/weather" target="_blank" rel="noopener noreferrer"
+                                class="project-link">
                                 <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
                         </div>
@@ -485,32 +482,28 @@
             <div class="contact-content">
                 <h3>Let's Create Something Amazing</h3>
                 <p>
-                    I'm always open to discussing new projects, creative ideas, or opportunities 
+                    I'm always open to discussing new projects, creative ideas, or opportunities
                     to be part of your vision. Feel free to reach out!
                 </p>
 
                 <div class="contact-info">
-                    <a href="mailto:contact@shashankarava.io" class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>contact@shashankarava.io</span>
-                    </a>
                     <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span id="my-email">aravashashank@gmail.com</span>
+                    </div>
+                    <!-- <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <span>San Francisco, CA</span>
-                    </div>
+                    </div> -->
                 </div>
 
-                <div class="contact-buttons">
-                    <a href="mailto:contact@shashankarava.io" class="btn btn-primary">
-                        <i class="fas fa-envelope"></i> Send Email
-                    </a>
-                    <a href="https://linkedin.com/in/shashankarava" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="btn btn-secondary">
+                <!-- <div class="contact-buttons">
+                    
+                    <a href="https://linkedin.com/in/shashank-arava" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-secondary">
                         <i class="fab fa-linkedin"></i> Connect on LinkedIn
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -519,13 +512,11 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Shashank Arava. All rights reserved.</p>
-            <p class="footer-love">
-                Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript
-            </p>
         </div>
     </footer>
 
     <!-- Custom JavaScript -->
     <script src="js/script.js"></script>
 </body>
+
 </html>

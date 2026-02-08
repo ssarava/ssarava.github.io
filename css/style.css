@@ -15,6 +15,7 @@
     --text-primary: #ffffff;
     --text-secondary: #a0a0a0;
     --border-color: #1f1f2e;
+    --turquoise: #00ffff;
     --card-bg: #13131a;
     
     /* Gradients */
@@ -136,6 +137,13 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     cursor: pointer;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    filter: drop-shadow(0 0 10px var(--primary-color));
+    border-radius: 20%;
 }
 
 .nav-links {
@@ -675,12 +683,14 @@ body {
     color: var(--text-secondary);
     transition: all var(--transition-normal);
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
 .contact-item:hover {
     border-color: var(--primary-color);
     color: var(--text-primary);
     transform: translateY(-2px);
+    font-size: 1.2rem;
 }
 
 .contact-item i {
@@ -839,4 +849,35 @@ body {
     .project-card {
         min-width: 100%;
     }
+}
+
+
+.tooltip {
+  position: relative; /* Container needs relative positioning */
+  display: inline-block;
+  border-bottom: 1px dotted black; /* Optional: adds a dotted underline */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden; /* Hide the popup by default */
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute; /* Position the popup absolutely relative to its container */
+  z-index: 1;
+  bottom: 125%; /* Position above the text */
+  left: 50%;
+  margin-left: -60px; /* Center the popup (half of width) */
+  opacity: 0;
+  transition: opacity 0.3s; /* Add a fade-in effect */
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible; /* Show the popup on hover */
+  opacity: 1;
+  font-size: 10px;
 }

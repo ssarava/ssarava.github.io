@@ -16,6 +16,19 @@ mobileMenuBtn.addEventListener('click', () => {
     }
 });
 
+// make email copiable upon click
+const spanElement = document.getElementById('clickToCopySpan');
+
+spanElement.addEventListener('click', () => {
+  const textToCopy = spanElement.textContent;
+  navigator.clipboard.writeText(textToCopy).then(() => {
+    alert('Copied: ' + textToCopy);
+  }).catch(err => {
+    console.error('Could not copy text: ', err);
+  });
+});
+
+
 // Close mobile menu when clicking on a link
 navLinkItems.forEach(link => {
     link.addEventListener('click', () => {
@@ -38,7 +51,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             
             window.scrollTo({
                 top: targetPosition,
-                behavior: 'smooth'
+                behavior: 'smooth',
             });
         }
     });
