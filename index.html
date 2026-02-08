@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -39,7 +39,7 @@
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <!-- <li><a href="#musics" class="nav-link">Music</a></li> -->
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#experience" class="nav-link">Experience</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -69,7 +69,7 @@
                 <div class="hero-buttons fade-in-up">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <!-- <a href="resume.pdf" class="btn btn-secondary" download>Download Resume</a> -->
-                     <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                 </div>
 
                 <div class="social-links fade-in-up">
@@ -97,15 +97,16 @@
     <section id="about" class="section">
         <div class="container">
             <div class="section-header">
-                <h2>About Me</h2>
-                <p>Get to know more about my background and expertise</p>
+                <h2>A Bit About Me</h2>
+                <!-- <p>Get to know more about my background and expertise</p> -->
             </div>
 
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Who I Am</h3>
+                    <!-- <h3>Who I Am</h3> -->
                     <p>
-                        I study Computer Science and Mathematics @ UMD.
+                        I study <a class="umd" href="https://www.cs.umd.edu/" target="_blank">Computer Science</a> and
+                        <a class="umd" href="https://www-math.umd.edu/" target="_blank">Mathematics</a> @ UMD.
                     </p>
                     <p>
 
@@ -125,9 +126,10 @@
                     <p>
                         In my free time, I enjoy travelling, lifting, and checking out new music.<br />
                         Oh, and I'm a game dev hobbyist.
+                        <!-- I've also decided to dip my feet in the pools of game development. -->
                     </p>
                 </div>
-                <img src="images/shashank_banff.jpeg" />
+                <img class="banff" src="images/shashank_banff.jpeg" />
                 <!-- <div class="stats-grid">
                     <div class="stat-item">
                         <span class="stat-number">5+</span>
@@ -150,50 +152,66 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
+    <!-- Music Section -->
+    <section id="music" class="section">
         <div class="container">
             <div class="section-header">
-                <h2>Skills & Technologies</h2>
-                <p>The tools and technologies I work with</p>
+                <h2>Beats On Repeat</h2>
+                <p>A Few Albums From My Personal Favorites</p>
             </div>
 
-            <div class="skills-grid">
-                <div class="skill-category">
+            <div class="music-grid">
+                <a href="https://www.youtube.com/watch?v=rr3p8qy1X-g" target="_blank">
+                    <img class="album" src="images/graduation.png" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=wIMSU8otS-g" target="_blank">
+                    <img class="album" src="images/ram.png" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=y-Z99vESlaU" target="_blank">
+                    <img class="album" src="images/take_care.png" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=DLG9oTH-ZbQ&pp=ygUOZ2hvc3QgbGFjaHlybWE%3D" target="_blank">
+                    <img class="album" src="images/skeleta.png" />
+                </a>
+                <a href="https://youtu.be/y-Z99vESlaU?t=4739" target="_blank">
+                    <img class="album" src="images/spiderverse.png" />
+                </a>
+
+                <!-- <div class="music-category">
                     <h3>Frontend</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">Next.js</span>
-                        <span class="skill-tag">Tailwind CSS</span>
-                        <span class="skill-tag">Redux</span>
-                        <span class="skill-tag">HTML/CSS</span>
+                    <div class="music-tags">
+                        <span class="music-tag">React</span>
+                        <span class="music-tag">TypeScript</span>
+                        <span class="music-tag">Next.js</span>
+                        <span class="music-tag">Tailwind CSS</span>
+                        <span class="music-tag">Redux</span>
+                        <span class="music-tag">HTML/CSS</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="music-category">
                     <h3>Backend</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Express</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">REST APIs</span>
+                    <div class="music-tags">
+                        <span class="music-tag">Node.js</span>
+                        <span class="music-tag">Python</span>
+                        <span class="music-tag">Express</span>
+                        <span class="music-tag">PostgreSQL</span>
+                        <span class="music-tag">MongoDB</span>
+                        <span class="music-tag">REST APIs</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="music-category">
                     <h3>Tools & Others</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">CI/CD</span>
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Agile/Scrum</span>
+                    <div class="music-tags">
+                        <span class="music-tag">Git</span>
+                        <span class="music-tag">Docker</span>
+                        <span class="music-tag">AWS</span>
+                        <span class="music-tag">CI/CD</span>
+                        <span class="music-tag">Figma</span>
+                        <span class="music-tag">Agile/Scrum</span>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -373,31 +391,36 @@
                     <div class="timeline-dot"></div>
                     <div class="experience-content">
                         <div class="experience-header">
-                            <h3>Senior Full Stack Developer</h3>
-                            <div class="experience-company">Tech Innovations Inc.</div>
+                            <h3>Biostatistics Software Intern</h3>
+                            <div class="experience-company">Harmony Biosciences</div>
                             <div class="experience-meta">
-                                <span><i class="far fa-calendar"></i> 2022 - Present</span>
-                                <span><i class="fas fa-map-marker-alt"></i> San Francisco, CA</span>
+                                <span><i class="far fa-calendar"></i>May 2025 - Aug 2025</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Remote</span>
                             </div>
                         </div>
 
                         <p class="experience-description">
-                            Leading development of enterprise web applications and mentoring junior developers.
+                            Built a clinical trial simulation app to evaluate power and precision across trial design
+                            scenarios.
                         </p>
 
                         <ul class="experience-achievements">
-                            <li>Architected and deployed microservices infrastructure serving 1M+ users</li>
-                            <li>Reduced application load time by 60% through performance optimization</li>
-                            <li>Led team of 5 developers in building customer-facing dashboard</li>
-                            <li>Implemented CI/CD pipeline reducing deployment time from 2 hours to 15 minutes</li>
+
+                            <li>Built a desktop clinical trial simulation application for sample size trade-off
+                                visualization</li>
+                            <li>Implemented Monte Carlo algorithms to evaluate statistical power, and Type I error</li>
+                            <li>Developed tools to support biostatisticians in modelling trial designs with
+                                configurable parameters</li>
+                            <li>Modeled and assessed precision across 1000s of trial scenarios, supporting
+                                protocol design decisions</li>
                         </ul>
 
                         <div class="experience-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Medidata</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">R</span>
+                            <span class="tech-tag">Tkinter</span>
                         </div>
                     </div>
                 </div>
@@ -407,63 +430,34 @@
                     <div class="timeline-dot"></div>
                     <div class="experience-content">
                         <div class="experience-header">
-                            <h3>Full Stack Developer</h3>
-                            <div class="experience-company">Digital Solutions Agency</div>
+                            <h3>Software Development Intern</h3>
+                            <div class="experience-company">Akira Technologies</div>
                             <div class="experience-meta">
-                                <span><i class="far fa-calendar"></i> 2020 - 2022</span>
-                                <span><i class="fas fa-map-marker-alt"></i> Remote</span>
+                                <span><i class="far fa-calendar"></i>Aug 2024 - May 2025</span>
+                                <span><i class="fas fa-map-marker-alt"></i>Washington D.C.</span>
                             </div>
                         </div>
 
                         <p class="experience-description">
-                            Developed custom web solutions for diverse clients across various industries.
+                            <!-- Developed custom web solutions for diverse clients across various industries. -->
+                            Developed a cloud-based, AI-powered system for a federal client.
                         </p>
 
                         <ul class="experience-achievements">
-                            <li>Built 15+ client websites and web applications from concept to deployment</li>
-                            <li>Increased client engagement by 40% through UX improvements</li>
-                            <li>Implemented RESTful APIs integrating with third-party services</li>
-                            <li>Collaborated with design team to create responsive, accessible interfaces</li>
+                            <li>Built a full-stack web application to automate a federal agency’s public-comment review
+                                workflow</li>
+                            <li>Recuded associated labor costs and manual review time by >80% for agency staff</li>
+                            <li>Developed cloud-backed features via AWS S3/RDS, supporting scalable document storage and
+                                retrieval</li>
+                            <li>Enhanced AI integration by developing an AWS Bedrock-powered chatbot for
+                                natural-language queries</li>
                         </ul>
 
                         <div class="experience-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Node.js</span>
                             <span class="tech-tag">React</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Firebase</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Experience 3 -->
-                <div class="experience-item">
-                    <div class="timeline-dot"></div>
-                    <div class="experience-content">
-                        <div class="experience-header">
-                            <h3>Junior Developer</h3>
-                            <div class="experience-company">StartUp Labs</div>
-                            <div class="experience-meta">
-                                <span><i class="far fa-calendar"></i> 2019 - 2020</span>
-                                <span><i class="fas fa-map-marker-alt"></i> Austin, TX</span>
-                            </div>
-                        </div>
-
-                        <p class="experience-description">
-                            Contributed to development of SaaS products for startup ventures.
-                        </p>
-
-                        <ul class="experience-achievements">
-                            <li>Developed features for MVP that secured $500K in seed funding</li>
-                            <li>Participated in agile development with 2-week sprint cycles</li>
-                            <li>Created reusable component library used across 3 products</li>
-                            <li>Fixed 200+ bugs and improved application stability</li>
-                        </ul>
-
-                        <div class="experience-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Django</span>
-                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">REST</span>
                         </div>
                     </div>
                 </div>
@@ -476,15 +470,19 @@
         <div class="container">
             <div class="section-header">
                 <h2>Get In Touch</h2>
-                <p>Let's work together on your next project</p>
+                <!-- <p>Let's work together on your next project</p> -->
+                <span class="reach-out">
+                    <!-- I'm always open to discussing new projects, creative ideas, and opportunities. -->
+                    I'm always to collaborations, discussions, and other opportunities.
+                </span>
             </div>
 
             <div class="contact-content">
-                <h3>Let's Create Something Amazing</h3>
+                <!-- <h3>Let's Create Something Amazing</h3>
                 <p>
                     I'm always open to discussing new projects, creative ideas, or opportunities
                     to be part of your vision. Feel free to reach out!
-                </p>
+                </p> -->
 
                 <div class="contact-info">
                     <div class="contact-item">
@@ -516,7 +514,7 @@
     </footer>
 
     <!-- Custom JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="code.js"></script>
 </body>
 
 </html>
