@@ -189,7 +189,7 @@ body {
   transform: scale(1.03);
 }
 
-.album {
+.album, .movie {
   max-width: 90%;
   height: auto;
   /* border: 1px solid var(--primary-color); */
@@ -198,7 +198,7 @@ body {
   transition: transform 0.3s ease-out;
 }
 
-.album:hover {
+.album:hover, .movie:hover {
   transform: scale(1.1);
   transition: all var(--transition-normal);
   /* border: 1px solid turquoise; */
@@ -475,7 +475,7 @@ a {
 }
 
 /* Music Section */
-.music-grid {
+.music-grid, .movies-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(200px, 1fr));
   /* gap: 2rem; */
@@ -925,6 +925,10 @@ body:has(.second-dot:hover) .second-experience {
   justify-content: center;
   gap: 0.5rem;
   margin-top: 0.5rem;
+}
+
+.movies {
+  margin-top: -9rem;
 }
 
 i {

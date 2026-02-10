@@ -138,24 +138,88 @@
         <div class="container">
             <div class="section-header">
                 <h2><span class="beats-type"></span></h2>
-                <p>A Few Albums From My Personal Favorites</p>
+                <p>A few albums from my personal favorites</p>
             </div>
 
             <div class="music-grid">
                 <a href="https://www.youtube.com/watch?v=rr3p8qy1X-g" target="_blank">
-                    <img class="album" src="images/graduation.png" />
+                    <img class="album" src="images/albums/graduation.png" />
                 </a>
                 <a href="https://www.youtube.com/watch?v=wIMSU8otS-g" target="_blank">
-                    <img class="album" src="images/ram.png" />
+                    <img class="album" src="images/albums/ram.png" />
                 </a>
                 <a href="https://www.youtube.com/watch?v=y-Z99vESlaU" target="_blank">
-                    <img class="album" src="images/take_care.png" />
+                    <img class="album" src="images/albums/take_care.png" />
                 </a>
                 <a href="https://www.youtube.com/watch?v=DLG9oTH-ZbQ&pp=ygUOZ2hvc3QgbGFjaHlybWE%3D" target="_blank">
-                    <img class="album" src="images/skeleta.png" />
+                    <img class="album" src="images/albums/skeleta.png" />
                 </a>
                 <a href="https://youtu.be/y-Z99vESlaU?t=4739" target="_blank">
-                    <img class="album" src="images/spiderverse.png" />
+                    <img class="album" src="images/albums/spiderverse.png" />
+                </a>
+
+                <!-- <div class="music-category">
+                    <h3>Frontend</h3>
+                    <div class="music-tags">
+                        <span class="music-tag">React</span>
+                        <span class="music-tag">TypeScript</span>
+                        <span class="music-tag">Next.js</span>
+                        <span class="music-tag">Tailwind CSS</span>
+                        <span class="music-tag">Redux</span>
+                        <span class="music-tag">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <div class="music-category">
+                    <h3>Backend</h3>
+                    <div class="music-tags">
+                        <span class="music-tag">Node.js</span>
+                        <span class="music-tag">Python</span>
+                        <span class="music-tag">Express</span>
+                        <span class="music-tag">PostgreSQL</span>
+                        <span class="music-tag">MongoDB</span>
+                        <span class="music-tag">REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="music-category">
+                    <h3>Tools & Others</h3>
+                    <div class="music-tags">
+                        <span class="music-tag">Git</span>
+                        <span class="music-tag">Docker</span>
+                        <span class="music-tag">AWS</span>
+                        <span class="music-tag">CI/CD</span>
+                        <span class="music-tag">Figma</span>
+                        <span class="music-tag">Agile/Scrum</span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Movie Scores Section -->
+    <section id="movies" class="movies section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="movies-type"></span></h2>
+                <p>Some of my favorite scores from movies and TV</p>
+            </div>
+
+            <div class="movies-grid">
+                <a href="https://www.youtube.com/watch?v=GFY7i7pJAXg" target="_blank">
+                    <img class="movie" src="images/scores/pirates.png" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=ob-73lHbwe4" target="_blank">
+                    <img class="movie" src="images/scores/superman.png" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=289H9XqmmpM&list=OLAK5uy_lb_YrsmEIYDjHKGpS7hjcc1pDMbDzgfYs" target="_blank">
+                    <img class="movie" src="images/scores/aot.png" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=D_2bluVPsb0" target="_blank">
+                    <img class="movie" src="images/scores/starwars.png" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=94TAFSMdkvk" target="_blank">
+                    <img class="movie" src="images/scores/batman.png" />
                 </a>
 
                 <!-- <div class="music-category">
@@ -208,7 +272,7 @@
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <img src="images/stitch_result.png"
+                    <img src="images/projects/geometry.png"
                         alt="Projective Geometry in Computer Vision" class="project-image">
                     <div class="project-content">
                         <h3>Projective Geometry in CV</h3>
@@ -241,7 +305,7 @@
 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <img src="images/gft.jpeg"
+                    <img src="images/projects/gft.jpeg"
                         alt="Projective Geometry in Computer Vision" class="project-image">
                     <div class="project-content">
                         <h3>Gamified Fitness Tracker</h3>
@@ -278,7 +342,7 @@
 
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <img src="images/tbd.png"
+                    <img src="images/projects/tbd.png"
                         alt="AI Content Generator" class="project-image">
                     <div class="project-content">
                         <h3>TBA</h3>
@@ -502,12 +566,24 @@
             }
         )
 
+        const moviesTyped = new Typed(".movies-type",
+            {strings: ["Scores That Never Bore"],
+                typeSpeed: 100,
+                backSpeed: 75,
+                loop: true,
+                fadeOut: true
+            }
+        )
+
+        movies
+
         const featuredProjects = new Typed(".featured-projects",
-            {strings: ["My Featured Projects", "Check Them Out"],
+            {strings: ["Check Out My Work"],
                 typeSpeed: 100,
                 backSpeed: 75,
                 backDelay: 1000,
                 loop: true,
+                fadeOut: true
             }
         )
 

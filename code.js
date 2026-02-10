@@ -33,7 +33,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     const target = document.querySelector(this.getAttribute("href"));
 
     if (target) {
-      const offset = 80; // Account for fixed navbar
+      const offset = 30; // Account for fixed navbar
       const targetPosition = target.offsetTop - offset;
 
       window.scrollTo({
