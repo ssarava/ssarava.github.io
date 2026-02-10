@@ -177,7 +177,7 @@ body {
 }
 
 .banff {
-  filter: drop-shadow(0 0 10px var(--primary-color));
+  filter: drop-shadow(0 0 10px var(--primary-color)) brightness(0.85);
   max-width: 90%;
   height: auto;
   border-radius: 15%;
@@ -185,8 +185,8 @@ body {
 }
 
 .banff:hover {
-  filter: drop-shadow(0 0 10px turquoise);
-  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px turquoise)  brightness(0.85);
+  transform: scale(1.03);
 }
 
 .album {
@@ -389,10 +389,9 @@ a {
   filter: drop-shadow(0 0 5px turquoise);
 }
 
-.social-links a:hover {
-  color: var(--primary-color);
+.tooltip:hover {
   border-color: var(--primary-color);
-  transform: translateY(-3px);
+  transform: translateY(-5px);
 }
 
 /* Section */
@@ -1061,6 +1060,10 @@ i {
   position: relative; /* Container needs relative positioning */
   display: inline-block;
   border-bottom: 1px dotted black; /* Optional: adds a dotted underline */
+}
+
+.social-links i {
+  color: var(--primary-color);
 }
 
 .tooltip .tooltiptext {

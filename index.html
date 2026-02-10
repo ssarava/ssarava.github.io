@@ -34,7 +34,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-content">
-                <div class="logo"><a href="#home">Shashank Arava</a></div>
+                <div class="logo"><a class="logo-link" href="#home">Shashank Arava</a></div>
 
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#home" class="nav-link">Home</a></li>
@@ -351,7 +351,7 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="section">
+    <section id="experience" class="section experience-section">
         <div class="container">
             <div class="section-header">
                 <h2><span class="work-experience"></span></h2>
@@ -486,7 +486,9 @@
             {strings: ["A Bit About Me"],
                 typeSpeed: 100,
                 backSpeed: 75,
-                loop: false,
+                loop: true,
+                fadeOut: true, 
+                fadeOutDelay: 500
             }
         )
 
@@ -514,7 +516,8 @@
                 typeSpeed: 100,
                 backSpeed: 75,
                 backDelay: 1000,
-                loop: false,
+                loop: true,
+                fadeOut: true
             }
         )
 
@@ -523,7 +526,8 @@
                 typeSpeed: 100,
                 backSpeed: 75,
                 backDelay: 1000,
-                loop: false,
+                loop: true,
+                fadeOut: true
             }
         )
     </script>
