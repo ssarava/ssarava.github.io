@@ -750,14 +750,14 @@ a {
   color: var(--text-primary);
 }
 
-body:has(.first-experience:hover) .first-dot {
+.timeline-dot:hover {
   background: turquoise;
   transform: scale(0.9);
   border: 3px solid turquoise;
   filter: drop-shadow(0 0 10px turquoise);
 }
 
-.timeline-dot:hover {
+body:has(.first-experience:hover) .first-dot {
   background: turquoise;
   transform: scale(0.9);
   border: 3px solid turquoise;
@@ -777,6 +777,18 @@ body:has(.second-experience:hover) .second-dot {
 }
 
 body:has(.second-dot:hover) .second-experience {
+  filter: drop-shadow(0 0 10px turquoise);
+  transform: translateY(-8px);
+}
+
+body:has(.third-experience:hover) .third-dot {
+  background: turquoise;
+  transform: scale(0.9);
+  border: 3px solid turquoise;
+  filter: drop-shadow(0 0 10px turquoise);
+}
+
+body:has(.third-dot:hover) .third-experience {
   filter: drop-shadow(0 0 10px turquoise);
   transform: translateY(-8px);
 }
